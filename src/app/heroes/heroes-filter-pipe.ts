@@ -6,6 +6,7 @@ import { IHeroes } from './heroes';
   standalone: false,
 })
 export class HeroesFilterPipe implements PipeTransform {
+  
   transform(value: IHeroes[], args: string): IHeroes[] {
     let filter:string=args?args.toLocaleLowerCase():'';
 

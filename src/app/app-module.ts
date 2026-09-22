@@ -5,9 +5,11 @@ import { FormsModule } from '@angular/forms';
 import { App } from './app';
 import { HeroesList } from './heroes/heroes-list/heroes-list';
 import { HeroesFilterPipe } from './heroes/heroes-filter-pipe';
+import { OperasBas } from './formularios/operas-bas/operas-bas';
+import { Distancias } from './formularios/distancias/distancias';
 
 @NgModule({
-  declarations: [App, HeroesList, HeroesFilterPipe],
+  declarations: [App, HeroesList, HeroesFilterPipe, OperasBas, Distancias],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [provideBrowserGlobalErrorListeners()],
   bootstrap: [App],
