@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+    <div class="row">
+        <div class="col-6">
+            <h2>Inicio de sesión</h2>
+            <br>
+            <label for="usuario">
+                Usuario:
+            </label>
+            <input
+                [(ngModel)]="usuario"
+                name="usuario"
+                type="text"
+                id="usuario">
+            <br><br>
+            <label for="contrasena">
+                Contraseña:
+            </label>
+            <input
+                [(ngModel)]="contrasena"
+                name="contrasena"
+                type="password"
+                id="contrasena">
+            <br><br>
+            <button
+                type="button"
+                class="btn btn-primary"
+                (click)="iniciarSesion()">
+                Iniciar sesión
+            </button>
+            <br><br>
+            <p>
+                {{ mensaje }}
+            </p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

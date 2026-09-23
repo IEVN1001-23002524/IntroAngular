@@ -7,13 +7,10 @@ import { Component } from '@angular/core';
 })
 export class OperasBas {
 
-num1:string=''
-num2:string=''
-resultado:number=0
-
-/* sumar():void{
-  this.resultado = parseInt(this.num1)+parseInt(this.num2)
-} */
+  num1: string = ''
+  num2: string = ''
+  resultado: number = 0
+  operacionSeleccionada: string = ''
 
   sumar(): void {
     this.resultado = parseInt(this.num1) + parseInt(this.num2);
@@ -28,26 +25,30 @@ resultado:number=0
   }
 
   dividir(): void {
-      this.resultado = parseInt(this.num1) / parseInt(this.num2);
+    this.resultado = parseInt(this.num1) / parseInt(this.num2);
   }
 
-  /* ejecutarOperacion(){
-    switch (this.operacionSeleccionada){
+  ejecutarOperacion(): void {
+
+    switch (this.operacionSeleccionada) {
+
       case 'sumar':
         this.sumar();
         break;
+
       case 'restar':
         this.restar();
         break;
+
       case 'multiplicar':
         this.multiplicar();
         break;
+
       case 'dividir':
         this.dividir();
         break;
-        
-    } 
-  }
-    */
-}
+    }
 
+  }
+
+}
