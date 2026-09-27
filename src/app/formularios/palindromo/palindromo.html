@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frase</title>
+</head>
+<body>
+
+    <div>
+        <h2>Analizar frase</h2>
+
+        <label>Frase: </label>
+        <input [(ngModel)]="frase" type="text" id="frase">
+    </div>
+
+    <br>
+
+    <div>
+        <h2>Resultados</h2>
+
+        <label>Vocales: </label>
+        <input [(ngModel)]="vocales" type="text" id="vocales">
+
+        <br><br>
+
+        <label>Número de vocales: </label>
+        <input [(ngModel)]="cantidadVocales" type="number">
+
+        <br><br>
+
+        <label>Consonantes: </label>
+        <input [(ngModel)]="consonantes" type="text" id="consonantes">
+
+        <br><br>
+
+        <label>Número de consonantes: </label>
+        <input [(ngModel)]="cantidadConsonantes" type="number" id="cantidadConsonantes">
+
+        <br><br>
+
+        <label>Palíndromo: </label>
+        <input [(ngModel)]="resultado" type="text" id="resultado">
+    </div>
+
+    <br>
+
+    <div>
+        <button type="button" (click)="procesar()">Procesar</button>
+    </div>
+
+</body>
+</html>
