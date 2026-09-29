@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 30px;
+    min-height: 100vh;
+    box-sizing: border-box;
+
+    background-color: #30348f;
+    background-image: url('/cinepolis.jpg');
+    background-repeat: no-repeat;
+    background-size: 900px;
+    background-position: center;
+
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/* CAJAS PRINCIPALES */
+body > div {
+    border: 2px solid white;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    width: 50%;
+    position: absolute;
+    top: 150px;
+    left: 300px;
+}
+ 
+.segundoContenedor {
+    width: 50%;
+    position: absolute;
+    top: 150px;
+    left: 900px;
+}
+
+.tamano {
+    width: 130px;
+}
+
+.grande {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.acciones {
+    position: absolute;
+    top: 500px;
+    left: 50%;
+}

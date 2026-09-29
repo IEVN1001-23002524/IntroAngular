@@ -9,7 +9,8 @@ import { OperasBas } from './formularios/operas-bas/operas-bas';
 import { Distancias } from './formularios/distancias/distancias';
 import { Areas } from './formularios/areas/areas';
 import { Usuario } from './formularios/usuario/usuario';
-
+import { Cinepolis } from './cinepolis/cinepolis';
+import { Palindromo } from './formularios/palindromo/palindromo';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,8 @@ import { Usuario } from './formularios/usuario/usuario';
     Distancias,
     Areas,
     Usuario,
+    Cinepolis,
+    Palindromo,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [provideBrowserGlobalErrorListeners()],
